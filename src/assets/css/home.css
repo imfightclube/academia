@@ -243,6 +243,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  position: relative;
   font-family: "Bungee", sans-serif;
   height: 100%;
   width: 100%;
@@ -250,11 +251,21 @@ header {
 
 .container__logo {
   background: url("../img/logo-nova\ \(Edited\).png");
-  background-size: cover;
-  height: 180px;
-  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5em;
+  height: 270px;
+  width: 225px;
 }
 
+.container__linha {
+  background: url('../img/linha-branca.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 140px;
+}
 .container__h3 {
   color: #ffffff;
   font-weight: 500;
