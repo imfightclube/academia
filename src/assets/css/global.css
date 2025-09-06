@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --font-default: "Roboto Condensed", sans-serif;
+  --font2: "Bebas Neue", sans-serif;
+  --background-body: azure;
+  --background-nav-lateral: #0d0d0d;
+  --destaque: #f5c400; /*botoes e icones */
+  --titulos: #003366; /*titolos, e areas segundarias*/
+  --texto: #f2f2f2;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}

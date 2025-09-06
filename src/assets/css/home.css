@@ -1,0 +1,225 @@
+@import url(./global.css);
+
+/*header*/
+header {
+  background: linear-gradient(78deg, #2a54a1 0%, #000000 50%, #000000 100%);
+
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*Padrao steach ele estica os items*/
+  flex-flow: row nowrap;
+  position: relative;
+  height: 60px;
+  width: 100%;
+}
+
+.header__logo {
+  background: url("../img/marca.png");
+  background-size: cover;
+  margin-left: 10px;
+  height: 90%;
+  width: 60px;
+}
+
+/*botao*/
+.header__menu-icon {
+  all: unset;
+  margin-right: 10px;
+  position: relative;
+  height: 40px;
+}
+
+.header__menu-icon:active {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.15);
+  animation: press 0.2s ease-out;
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.98);
+  }
+}
+
+.header__menu-icon > span {
+  position: absolute;
+  transform: translate(-45px, 12px);
+}
+
+.menu-icon__img {
+  height: 40px;
+  width: 40px;
+}
+
+/*Menu*/
+.menu {
+  background: #000000;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  position: fixed; /* fixed é melhor para menus */
+  top: 6.4%;
+  right: -100%; /* esconde completamente pra direita */
+  height: 360px;
+  width: 100%; /* ou 300px para largura fixa */
+  max-width: 500px; /* limita largura máxima */
+  z-index: 9999;
+  transition: right 0.25s ease-in-out; /* anima a posição */
+}
+
+.menu.ativo {
+  right: 0; /* mostra o menu */
+}
+
+.menu__lista {
+  list-style: none;
+}
+
+.menu__lista li {
+  margin: 10px auto 15px 40px;
+  width: 10em;
+}
+
+.menu__button.primeiro {
+  margin-top: 5px;
+}
+
+.menu__button {
+  all: unset;
+  color: white;
+}
+
+.linha {
+  background-color: rgb(73, 73, 73);
+  display: block;
+  margin: 10px auto 25px auto;
+  height: 2px;
+  width: 90%;
+}
+
+/*sessao destaque*/
+.sessao-destaque {
+  background-color: #000000;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 360px;
+  width: 100%;
+}
+
+.carosesl {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 95%;
+  width: 95%;
+}
+
+.carosesl__img {
+  background-image: url("../img/img-jiu-jitsu-destaque.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.fade-in {
+  animation: aparecer .5s ease-in-out forwards;
+}
+
+@keyframes aparecer {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+/*Texto e botao saiba+*/
+.outros__texto {
+  position: absolute;
+  font-family: "Bungee", sans-serif;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 63%;
+  height: 24%;
+}
+
+.texto__modalidade {
+  color: #ff9500;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.texto__nome {
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.texto__arte {
+  color: #448ccd;
+  font-size: 2em;
+  text-align: center;
+}
+
+/*botao*/
+.outros__bnt {
+  background-color: #e03131;
+  border-radius: 10px;
+  color: #ffffff;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  text-align: center;
+  padding-top: 9px;
+  font-size: 1.1em;
+  font-family: "Bungee", sans-serif;
+  font-weight: 600;
+  height: 40px;
+  width: 6em;
+}
+
+/*Botoes proximo e anterior*/
+.img__botoes {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.botoes {
+  all: unset;
+  color: rgb(255, 0, 0);
+  height: 30px;
+  width: 30px;
+}
+
+.botoes.prox {
+  background: url("../img/icons/proximo\ \(1\).png");
+  background-size: contain;
+}
+
+.botoes.ant {
+  background: url("../img/icons/seta-direita\ \(1\).png");
+  background-size: contain;
+}
+
+@media (max-width: 1024px) {
+  /* Estilos para mobile e tablets */
+  .img__botoes {
+    display: none;
+  }
+}
