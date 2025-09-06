@@ -124,11 +124,10 @@ header {
 }
 
 .carosesl {
-  border-radius: 10px;
   overflow: hidden;
   position: relative;
   height: 95%;
-  width: 95%;
+  width: 100%;
 }
 
 .carosesl__img {
