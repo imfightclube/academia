@@ -94,7 +94,7 @@ const iniciaAuto = () => {
     } else {
       indice = 0;
     }
-  }, 3100);
+  }, 4000);
 };
 
 function resetaAuto() {
