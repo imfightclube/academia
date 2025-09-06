@@ -64,8 +64,8 @@ header {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  position: fixed; /* fixed é melhor para menus */
-  top: 6.4%;
+  position: absolute; /* fixed é melhor para menus */
+  top: 60px;
   right: -100%; /* esconde completamente pra direita */
   height: 360px;
   width: 100%; /* ou 300px para largura fixa */
