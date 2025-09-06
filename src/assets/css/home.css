@@ -15,7 +15,7 @@ header {
 }
 
 .header__logo {
-  background: url("../img/marca.png");
+  background: url("../img/logo-nova\ \(Edited\).png");
   background-size: cover;
   margin-left: 10px;
   height: 90%;
@@ -249,19 +249,19 @@ header {
 }
 
 .container__logo {
-  background: url("../img/marca.png");
+  background: url("../img/logo-nova\ \(Edited\).png");
   background-size: cover;
   height: 180px;
   width: 200px;
 }
 
 .container__h3 {
-  color: #fab005;
+  color: #ffffff;
   font-weight: 500;
 }
 
 .container__h2 {
-  color: #228be6;
+  color:  #ffba59;
   font-weight: 700;
 }
 
