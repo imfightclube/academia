@@ -20,8 +20,9 @@
 
 html,
 body {
+  background-color: #0d0d0d;
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto Condensed", sans-serif;;
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
